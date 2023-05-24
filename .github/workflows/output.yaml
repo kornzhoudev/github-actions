@@ -10,7 +10,7 @@ jobs:
       - name: Output GitHub context
         run: echo "${{ toJSON(github) }}"
       - name: Get code
-        run: actions/checkout@v3
+        uses: actions/checkout@v3
       - name: Install dependencies
         run: npm ci
       - name: Test code
